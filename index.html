@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculadora</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+    <link rel="shortcut icon" href="icon.png" class="img/x-icon">
+</head>
+
+<body class="bg2">
+    <nav class="navbar bg">
+        <div class="container-fluid">
+            <a class="navbar-brand bg">
+                <img src="icon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                <b>Cálculatora</b>
+            </a>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card border-dark m-3 bg3" style="width: 8.5cm;">
+                    <div class="card-header bg"><b>Cálculadora</b></div>
+                    <div class="card-body">
+                        <div class="card border-dark m-3 size">
+                            <div class="card-body">
+                                <p id="display"></p>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-dark mt-2 butac" onclick="ac()"><b>AC</b></button>
+                        <button class="btn btn-outline-dark mt-2 float-end butbo"
+                            onclick="borrar()"><b>Borrar</b></button><br>
+                        <button class="btn btn-outline-dark mt-2 but" onclick="siete()"><b>7</b></button>
+                        <button class="btn btn-outline-dark mt-2 but" onclick="ocho()"><b>8</b></button>
+                        <button class="btn btn-outline-dark mt-2 but" onclick="nueve()"><b>9</b></button>
+                        <button class="btn btn-outline-dark mt-2 butop" onclick="mul()"><b>x</b></button><br>
+                        <button class="btn btn-outline-dark mt-2 but" onclick="cuatro()"><b>4</b></button>
+                        <button class="btn btn-outline-dark mt-2 but" onclick="cinco()"><b>5</b></button>
+                        <button class="btn btn-outline-dark mt-2 but" onclick="seis()"><b>6</b></button>
+                        <button class="btn btn-outline-dark mt-2 butop" onclick="res()"><b>-</b></button><br>
+                        <button class="btn btn-outline-dark mt-2 but" onclick="uno()"><b>1</b></button>
+                        <button class="btn btn-outline-dark mt-2 but" onclick="dos()"><b>2</b></button>
+                        <button class="btn btn-outline-dark mt-2 but" onclick="tres()"><b>3</b></button>
+                        <button class="btn btn-outline-dark mt-2 butop" onclick="sum()"><b>+</b></button><br>
+                        <button class="btn btn-outline-dark mt-2 but" onclick="punto()"><b>.</b></button>
+                        <button class="btn btn-outline-dark mt-2 but" onclick="cero()"><b>0</b></button>
+                        <button class="btn btn-outline-dark mt-2 butop" onclick="igual()"><b>=</b></button>
+                        <button class="btn btn-outline-dark mt-2 butop" onclick="div()"><b>/</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <table class="table border-dark bg me-3 mt-3">
+                    <thead>
+                        <th>Historial</th>
+                    </thead>
+                    <tbody id="historial" class="lp"></tbody>
+                </table>
+                <button class="btn btn-outline-dark mt-2 bg" onclick="limpiar()"><b>Limpiar Historial</b></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+
+</html>

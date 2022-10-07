@@ -1,0 +1,40 @@
+.bg {
+    background-color: midnightblue;
+    color: white;
+}
+
+.bg2 {
+    background-color: darkslategrey;
+}
+
+.bg3{
+    background-color: whitesmoke;
+}
+
+.lp {
+    font-size: small;
+}
+
+.but{
+    width: 1.8cm;
+    background-color: aliceblue;
+}
+
+.butop{
+    width: 1.8cm;
+    background-color: gold;
+}
+
+.butbo{
+    width: 2cm;
+    background-color: rgb(226, 53, 53);
+}
+
+.butac{
+    width: 1.8cm;
+    background-color: rgb(77, 102, 240);
+}
+
+.size{
+    height: 1.5cm;
+}
