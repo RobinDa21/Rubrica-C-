@@ -49,7 +49,6 @@ const nueve = () => {
 //Funcion punto
 const punto = () => {
     if (n.includes(".")) {
-        alert("no puede colocar más de un punto en un número")
     } else {
         display.innerHTML += "."
         n += "."
@@ -71,7 +70,6 @@ const ac = () => {
 //Funciones Operaciones
 const sum = () => {
     if (n == "") {
-        alert("debe ingresar un número")
         return
     } else {
         num[0] = parseFloat(n)
@@ -93,7 +91,6 @@ const res = () => {
 }
 const mul = () => {
     if (n == "") {
-        alert("debe ingresar un número")
         return
     } else {
         num[0] = parseFloat(n)
@@ -104,7 +101,6 @@ const mul = () => {
 }
 const div = () => {
     if (n == "") {
-        alert("debe ingresar un número")
         return
     } else {
         num[0] = parseFloat(n)
@@ -115,7 +111,6 @@ const div = () => {
 }
 const igual = () => {
     if (n == "" || operacion == "") {
-        alert("debe ingresar un número u operador")
         return
     } else {
         num[1] = parseFloat(n)
